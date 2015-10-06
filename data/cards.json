@@ -9311,15 +9311,48 @@
     "pic": "252/278/22398",
     "clas": 9,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 1,
       "maxHp": 4,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "if-hold-dragon",
+                "params": [
+                  "add-attack",
+                  1
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            }
+          },
+          {
+            "acts": [
+              {
+                "name": "if-hold-dragon",
+                "params": [
+                  "add-flags",
+                  "taunt"
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -12952,6 +12985,7 @@
     "pic": "252/547/22348",
     "clas": 3,
     "type": 1,
+    "comment": "",
     "flags": [],
     "minion": {
       "attack": 4,
@@ -12965,6 +12999,7 @@
               {
                 "name": "if-race-gain-attack-hp",
                 "params": [
+                  "pirate",
                   1
                 ]
               }
@@ -16439,15 +16474,48 @@
     "pic": "252/501/22351",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 2,
       "maxHp": 6,
       "flags": [],
       "race": 3,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "if-hold-dragon",
+                "params": [
+                  "add-attack",
+                  1
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            }
+          },
+          {
+            "acts": [
+              {
+                "name": "if-hold-dragon",
+                "params": [
+                  "add-flags",
+                  "taunt"
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -20151,15 +20219,27 @@
     "pic": "149/94/12175",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 6,
       "maxHp": 5,
       "flags": [],
       "race": 4,
-      "events": {}
+      "events": {
+        "deathrattle": [
+          {
+            "acts": [
+              {
+                "name": "summon-random-minion",
+                "params": [
+                  "_",
+                  4
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
