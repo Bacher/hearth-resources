@@ -3531,15 +3531,31 @@
     "pic": "252/210/22263",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 1,
       "maxHp": 2,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "add-attack",
+                "params": [
+                  1
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -5465,9 +5481,7 @@
     "pic": "252/264/22298",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 2,
       "maxHp": 4,
@@ -5475,7 +5489,40 @@
         "cant-attack"
       ],
       "race": 0,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "add-aura",
+                "params": [
+                  "this-turn"
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            },
+            "aura": {
+              "acts": [
+                {
+                  "name": "remove-flags",
+                  "params": [
+                    "cant-attack"
+                  ]
+                }
+              ],
+              "targetsType": {
+                "names": [
+                  "self"
+                ]
+              }
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -18914,15 +18961,41 @@
     "pic": "252/364/22271",
     "clas": 2,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "comment": "",
+    "flags": [],
     "minion": {
       "attack": 3,
       "maxHp": 6,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "add-attack",
+                "params": [
+                  2
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "friends",
+                "minions"
+              ],
+              "modificators": [
+                {
+                  "name": "race",
+                  "params": [
+                    "totem"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
