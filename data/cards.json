@@ -8874,6 +8874,35 @@
     }
   },
   {
+    "id": 487,
+    "name": "Stormforged Axe",
+    "cost": 2,
+    "pic": "148/133/152",
+    "clas": 2,
+    "type": 3,
+    "flags": [],
+    "weapon": {
+      "attack": 2,
+      "durability": 3,
+      "flags": [],
+      "race": 0,
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "overload",
+                "params": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
     "id": 22,
     "name": "Succubus",
     "cost": 2,
@@ -8934,7 +8963,7 @@
     "name": "Tiny Knight of Evil",
     "cost": 2,
     "pic": "252/513/22386",
-    "clas": 0,
+    "clas": 7,
     "type": 1,
     "flags": [
       "unimplemented"
@@ -9242,7 +9271,7 @@
     "name": "Wrathguard",
     "cost": 2,
     "pic": "252/529/22304",
-    "clas": 0,
+    "clas": 7,
     "type": 1,
     "flags": [
       "unimplemented"
@@ -11724,6 +11753,44 @@
       "flags": [],
       "race": 0,
       "events": {}
+    }
+  },
+  {
+    "id": 488,
+    "name": "Lava Burst",
+    "cost": 3,
+    "pic": "148/118/679",
+    "clas": 2,
+    "type": 2,
+    "targetsType": {
+      "names": [
+        "all"
+      ]
+    },
+    "flags": [],
+    "spell": {
+      "acts": [
+        {
+          "acts": [
+            {
+              "name": "deal-damage",
+              "params": [
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "acts": [
+            {
+              "name": "overload",
+              "params": [
+                2
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -17307,6 +17374,37 @@
     }
   },
   {
+    "id": 486,
+    "name": "Doomhammer",
+    "cost": 5,
+    "pic": "148/461/172",
+    "clas": 2,
+    "type": 3,
+    "flags": [],
+    "weapon": {
+      "attack": 2,
+      "durability": 8,
+      "flags": [
+        "windfury"
+      ],
+      "race": 0,
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "overload",
+                "params": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
     "id": 725,
     "name": "Dragon Consort",
     "cost": 5,
@@ -20625,7 +20723,7 @@
     "name": "Void Crusher",
     "cost": 6,
     "pic": "252/520/22387",
-    "clas": 0,
+    "clas": 7,
     "type": 1,
     "flags": [
       "unimplemented"
