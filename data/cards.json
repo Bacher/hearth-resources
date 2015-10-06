@@ -4753,7 +4753,9 @@
     "pic": "149/384/7870",
     "clas": 0,
     "type": 1,
-    "flags": [],
+    "flags": [
+      "uncollectable"
+    ],
     "minion": {
       "attack": 2,
       "maxHp": 2,
@@ -5823,6 +5825,24 @@
           ]
         }
       ]
+    }
+  },
+  {
+    "id": 489,
+    "name": "Captain's Parrot",
+    "cost": 2,
+    "pic": "149/490/559",
+    "clas": 0,
+    "type": 1,
+    "flags": [
+      "unimplemented"
+    ],
+    "minion": {
+      "attack": 1,
+      "maxHp": 1,
+      "flags": [],
+      "race": 1,
+      "events": {}
     }
   },
   {
@@ -12203,7 +12223,9 @@
     "pic": "148/648/7739",
     "clas": 0,
     "type": 1,
-    "flags": [],
+    "flags": [
+      "uncollectable"
+    ],
     "minion": {
       "attack": 4,
       "maxHp": 4,
@@ -14166,15 +14188,18 @@
   },
   {
     "id": 3,
-    "type": 1,
     "name": "Brewmaster",
-    "pic": "149/700/397",
     "cost": 4,
+    "pic": "149/700/397",
     "clas": 0,
+    "type": 1,
+    "flags": [
+      "uncollectable"
+    ],
     "minion": {
       "attack": 4,
       "maxHp": 4,
-      "flags": null,
+      "flags": [],
       "events": {}
     }
   },
