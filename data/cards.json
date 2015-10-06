@@ -3543,6 +3543,47 @@
     }
   },
   {
+    "id": 480,
+    "name": "Mana Wyrm",
+    "cost": 1,
+    "pic": "149/484/263",
+    "clas": 8,
+    "type": 1,
+    "flags": [],
+    "minion": {
+      "attack": 1,
+      "maxHp": 3,
+      "flags": [],
+      "race": 0,
+      "events": {
+        "custom": [
+          {
+            "acts": [
+              {
+                "name": "add-attack",
+                "params": [
+                  1
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            },
+            "event": {
+              "name": "play-card",
+              "params": [
+                "my",
+                2
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
     "id": 56,
     "name": "Mechanical Dragonling",
     "cost": 1,
@@ -8700,6 +8741,24 @@
     }
   },
   {
+    "id": 481,
+    "name": "Sorcerer's Apprentice",
+    "cost": 2,
+    "pic": "148/550/4",
+    "clas": 8,
+    "type": 1,
+    "flags": [
+      "unimplemented"
+    ],
+    "minion": {
+      "attack": 3,
+      "maxHp": 2,
+      "flags": [],
+      "race": 0,
+      "events": {}
+    }
+  },
+  {
     "id": 881,
     "name": "Sparring Partner",
     "cost": 2,
@@ -11650,6 +11709,24 @@
     }
   },
   {
+    "id": 482,
+    "name": "Kirin Tor Mage",
+    "cost": 3,
+    "pic": "148/562/411",
+    "clas": 8,
+    "type": 1,
+    "flags": [
+      "unimplemented"
+    ],
+    "minion": {
+      "attack": 4,
+      "maxHp": 3,
+      "flags": [],
+      "race": 0,
+      "events": {}
+    }
+  },
+  {
     "id": 176,
     "name": "Leokk",
     "cost": 3,
@@ -11917,6 +11994,22 @@
             ]
           }
         ]
+      }
+    }
+  },
+  {
+    "id": 483,
+    "name": "Mirror Entity",
+    "cost": 3,
+    "pic": "148/181/569",
+    "clas": 8,
+    "type": 4,
+    "flags": [
+      "unimplemented"
+    ],
+    "trap": {
+      "events": {
+        "custom": []
       }
     }
   },
@@ -12993,6 +13086,22 @@
             }
           }
         ]
+      }
+    }
+  },
+  {
+    "id": 485,
+    "name": "Spellbender",
+    "cost": 3,
+    "pic": "149/612/309",
+    "clas": 8,
+    "type": 4,
+    "flags": [
+      "unimplemented"
+    ],
+    "trap": {
+      "events": {
+        "custom": []
       }
     }
   },
@@ -14575,6 +14684,24 @@
     "minion": {
       "attack": 3,
       "maxHp": 2,
+      "flags": [],
+      "race": 0,
+      "events": {}
+    }
+  },
+  {
+    "id": 484,
+    "name": "Ethereal Arcanist",
+    "cost": 4,
+    "pic": "148/154/125",
+    "clas": 8,
+    "type": 1,
+    "flags": [
+      "unimplemented"
+    ],
+    "minion": {
+      "attack": 3,
+      "maxHp": 3,
       "flags": [],
       "race": 0,
       "events": {}
