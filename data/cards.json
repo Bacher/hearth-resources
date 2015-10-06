@@ -3507,6 +3507,24 @@
     }
   },
   {
+    "id": 871,
+    "name": "Living Roots",
+    "cost": 1,
+    "pic": "252/568/22329",
+    "clas": 6,
+    "type": 2,
+    "additionActions": [
+      "1",
+      "2"
+    ],
+    "flags": [
+      "unimplemented"
+    ],
+    "spell": {
+      "acts": []
+    }
+  },
+  {
     "id": 752,
     "name": "Lowly Squire",
     "cost": 1,
@@ -4023,6 +4041,24 @@
           ]
         }
       ]
+    }
+  },
+  {
+    "id": 872,
+    "name": "Sapling",
+    "cost": 1,
+    "pic": "252/577/22439",
+    "clas": 0,
+    "type": 1,
+    "flags": [
+      "uncollectable"
+    ],
+    "minion": {
+      "attack": 1,
+      "maxHp": 1,
+      "flags": [],
+      "race": 0,
+      "events": {}
     }
   },
   {
@@ -5944,6 +5980,43 @@
     }
   },
   {
+    "id": 869,
+    "name": "Darnassus Aspirant",
+    "cost": 2,
+    "pic": "252/580/22303",
+    "clas": 6,
+    "type": 1,
+    "flags": [],
+    "minion": {
+      "attack": 2,
+      "maxHp": 3,
+      "flags": [],
+      "race": 0,
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "add-crystal",
+                "params": []
+              }
+            ]
+          }
+        ],
+        "deathrattle": [
+          {
+            "acts": [
+              {
+                "name": "destroy-crystal",
+                "params": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
     "id": 251,
     "name": "Defias Ringleader",
     "cost": 2,
@@ -6154,6 +6227,24 @@
           }
         ]
       }
+    }
+  },
+  {
+    "id": 870,
+    "name": "Druid of the Saber",
+    "cost": 2,
+    "pic": "252/342/22307",
+    "clas": 6,
+    "type": 1,
+    "flags": [
+      "unimplemented"
+    ],
+    "minion": {
+      "attack": 2,
+      "maxHp": 1,
+      "flags": [],
+      "race": 0,
+      "events": {}
     }
   },
   {
@@ -11685,6 +11776,20 @@
     }
   },
   {
+    "id": 868,
+    "name": "Mulch",
+    "cost": 3,
+    "pic": "252/354/22383",
+    "clas": 6,
+    "type": 2,
+    "flags": [
+      "unimplemented"
+    ],
+    "spell": {
+      "acts": []
+    }
+  },
+  {
     "id": 400,
     "name": "Murloc Warleader",
     "cost": 3,
@@ -13509,6 +13614,33 @@
       "flags": [],
       "race": 1,
       "events": {}
+    }
+  },
+  {
+    "id": 865,
+    "name": "Astral Communion",
+    "cost": 4,
+    "pic": "252/352/22334",
+    "clas": 6,
+    "type": 2,
+    "flags": [],
+    "spell": {
+      "acts": [
+        {
+          "acts": [
+            {
+              "name": "add-crystal",
+              "params": [
+                10
+              ]
+            },
+            {
+              "name": "discard-hand",
+              "params": []
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -15381,6 +15513,24 @@
     }
   },
   {
+    "id": 866,
+    "name": "Savage Combatant",
+    "cost": 4,
+    "pic": "252/583/22293",
+    "clas": 6,
+    "type": 1,
+    "flags": [
+      "unimplemented"
+    ],
+    "minion": {
+      "attack": 5,
+      "maxHp": 4,
+      "flags": [],
+      "race": 1,
+      "events": {}
+    }
+  },
+  {
     "id": 630,
     "name": "Screwjank Clunker",
     "cost": 4,
@@ -16032,6 +16182,52 @@
                 }
               ]
             }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 867,
+    "name": "Wildwalker",
+    "cost": 4,
+    "pic": "252/586/22361",
+    "clas": 6,
+    "type": 1,
+    "comment": "Является ли баттлекрай опциональным?",
+    "targetsType": {
+      "names": [
+        "minions",
+        "friends"
+      ],
+      "modificators": [
+        {
+          "name": "race",
+          "params": [
+            "beast"
+          ]
+        }
+      ]
+    },
+    "isTargetsTypeOptional": true,
+    "flags": [],
+    "minion": {
+      "attack": 4,
+      "maxHp": 4,
+      "flags": [],
+      "race": 0,
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "add-hp",
+                "params": [
+                  3
+                ]
+              }
+            ],
+            "optional": true
           }
         ]
       }
@@ -20626,6 +20822,24 @@
     }
   },
   {
+    "id": 864,
+    "name": "Knight of the Wild",
+    "cost": 7,
+    "pic": "252/340/22360",
+    "clas": 6,
+    "type": 1,
+    "flags": [
+      "unimplemented"
+    ],
+    "minion": {
+      "attack": 6,
+      "maxHp": 6,
+      "flags": [],
+      "race": 0,
+      "events": {}
+    }
+  },
+  {
     "id": 667,
     "name": "Malorne",
     "cost": 7,
@@ -21495,6 +21709,25 @@
           }
         ]
       }
+    }
+  },
+  {
+    "id": 863,
+    "name": "Aviana",
+    "cost": 9,
+    "pic": "252/356/22325",
+    "clas": 6,
+    "type": 1,
+    "flags": [
+      "unique",
+      "unimplemented"
+    ],
+    "minion": {
+      "attack": 5,
+      "maxHp": 5,
+      "flags": [],
+      "race": 0,
+      "events": {}
     }
   },
   {
