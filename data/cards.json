@@ -20755,6 +20755,24 @@
     }
   },
   {
+    "id": 882,
+    "name": "Wilfred Fizzlebang",
+    "cost": 6,
+    "pic": "252/532/22288",
+    "clas": 7,
+    "type": 1,
+    "flags": [
+      "unimplemented;unique"
+    ],
+    "minion": {
+      "attack": 4,
+      "maxHp": 4,
+      "flags": [],
+      "race": 0,
+      "events": {}
+    }
+  },
+  {
     "id": 430,
     "name": "Windfury Harpy",
     "cost": 6,
