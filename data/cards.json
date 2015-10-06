@@ -5182,6 +5182,24 @@
     }
   },
   {
+    "id": 880,
+    "name": "Alexstrasza's Champion",
+    "cost": 2,
+    "pic": "252/412/22333",
+    "clas": 1,
+    "type": 1,
+    "flags": [
+      "unimplemented"
+    ],
+    "minion": {
+      "attack": 2,
+      "maxHp": 3,
+      "flags": [],
+      "race": 0,
+      "events": {}
+    }
+  },
+  {
     "id": 221,
     "name": "Amari Berserker",
     "cost": 2,
@@ -5688,6 +5706,43 @@
       ],
       "events": {},
       "race": 5
+    }
+  },
+  {
+    "id": 879,
+    "name": "Bolster",
+    "cost": 2,
+    "pic": "252/406/22320",
+    "clas": 1,
+    "type": 2,
+    "flags": [],
+    "spell": {
+      "acts": [
+        {
+          "acts": [
+            {
+              "name": "add-attack-hp",
+              "params": [
+                2
+              ]
+            }
+          ],
+          "targetsType": {
+            "names": [
+              "friends",
+              "minions"
+            ],
+            "modificators": [
+              {
+                "name": "with",
+                "params": [
+                  "taunt"
+                ]
+              }
+            ]
+          }
+        }
+      ]
     }
   },
   {
@@ -8645,6 +8700,42 @@
     }
   },
   {
+    "id": 881,
+    "name": "Sparring Partner",
+    "cost": 2,
+    "pic": "252/408/22354",
+    "clas": 1,
+    "type": 1,
+    "targetsType": {
+      "names": [
+        "minions"
+      ]
+    },
+    "flags": [],
+    "minion": {
+      "attack": 3,
+      "maxHp": 2,
+      "flags": [
+        "taunt"
+      ],
+      "race": 0,
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "add-flags",
+                "params": [
+                  "taunt"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
     "id": 16,
     "name": "Spirit Wolf",
     "cost": 2,
@@ -9358,6 +9449,44 @@
       ],
       "race": 0,
       "events": {}
+    }
+  },
+  {
+    "id": 877,
+    "name": "Bash",
+    "cost": 3,
+    "pic": "252/398/22309",
+    "clas": 1,
+    "type": 2,
+    "targetsType": {
+      "names": [
+        "all"
+      ]
+    },
+    "flags": [],
+    "spell": {
+      "acts": [
+        {
+          "acts": [
+            {
+              "name": "deal-damage",
+              "params": [
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "acts": [
+            {
+              "name": "add-armor",
+              "params": [
+                3
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -11485,6 +11614,24 @@
     }
   },
   {
+    "id": 876,
+    "name": "King's Defender",
+    "cost": 3,
+    "pic": "252/400/22286",
+    "clas": 1,
+    "type": 3,
+    "flags": [
+      "unimplemented"
+    ],
+    "weapon": {
+      "attack": 3,
+      "durability": 2,
+      "flags": [],
+      "race": 0,
+      "events": {}
+    }
+  },
+  {
     "id": 176,
     "name": "Leokk",
     "cost": 3,
@@ -11918,6 +12065,24 @@
     "weapon": {
       "attack": 4,
       "durability": 2,
+      "flags": [],
+      "race": 0,
+      "events": {}
+    }
+  },
+  {
+    "id": 878,
+    "name": "Orgrimmar Aspirant",
+    "cost": 3,
+    "pic": "252/402/22395",
+    "clas": 1,
+    "type": 1,
+    "flags": [
+      "unimplemented"
+    ],
+    "minion": {
+      "attack": 3,
+      "maxHp": 3,
       "flags": [],
       "race": 0,
       "events": {}
@@ -14960,6 +15125,24 @@
       "maxHp": 4,
       "flags": [],
       "race": 1,
+      "events": {}
+    }
+  },
+  {
+    "id": 875,
+    "name": "Magnataur Alpha",
+    "cost": 4,
+    "pic": "252/404/22376",
+    "clas": 1,
+    "type": 1,
+    "flags": [
+      "unimplemented"
+    ],
+    "minion": {
+      "attack": 5,
+      "maxHp": 3,
+      "flags": [],
+      "race": 0,
       "events": {}
     }
   },
@@ -19825,6 +20008,24 @@
     }
   },
   {
+    "id": 874,
+    "name": "Sea Reaver",
+    "cost": 6,
+    "pic": "252/304/22339",
+    "clas": 1,
+    "type": 1,
+    "flags": [
+      "unimplemented"
+    ],
+    "minion": {
+      "attack": 6,
+      "maxHp": 7,
+      "flags": [],
+      "race": 0,
+      "events": {}
+    }
+  },
+  {
     "id": 628,
     "name": "Shieldmaiden",
     "cost": 6,
@@ -22245,6 +22446,24 @@
     "minion": {
       "attack": 8,
       "maxHp": 8,
+      "flags": [],
+      "race": 0,
+      "events": {}
+    }
+  },
+  {
+    "id": 873,
+    "name": "Varian Wrynn",
+    "cost": 10,
+    "pic": "252/414/22342",
+    "clas": 1,
+    "type": 1,
+    "flags": [
+      "unique,unimplemented"
+    ],
+    "minion": {
+      "attack": 7,
+      "maxHp": 7,
       "flags": [],
       "race": 0,
       "events": {}
