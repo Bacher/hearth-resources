@@ -11533,6 +11533,24 @@
     }
   },
   {
+    "id": 479,
+    "name": "Ironfur Grizzly",
+    "cost": 3,
+    "pic": "147/592/519",
+    "clas": 0,
+    "type": 1,
+    "flags": [],
+    "minion": {
+      "attack": 3,
+      "maxHp": 3,
+      "flags": [
+        "taunt"
+      ],
+      "race": 1,
+      "events": {}
+    }
+  },
+  {
     "id": 235,
     "name": "Jungle Panther",
     "cost": 3,
