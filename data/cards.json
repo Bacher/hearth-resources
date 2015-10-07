@@ -18463,46 +18463,6 @@
     }
   },
   {
-    "id": 305,
-    "name": "Kidnapper",
-    "cost": 5,
-    "pic": "149/453/562",
-    "clas": 3,
-    "type": 1,
-    "combo": {
-      "object": {
-        "events": {
-          "battlecry": [
-            {
-              "acts": [
-                {
-                  "name": "return-to-hand",
-                  "params": []
-                }
-              ]
-            }
-          ]
-        }
-      },
-      "spell": {
-        "acts": []
-      },
-      "targetsType": {
-        "names": [
-          "minions"
-        ]
-      }
-    },
-    "flags": [],
-    "minion": {
-      "attack": 5,
-      "maxHp": 3,
-      "flags": [],
-      "race": 0,
-      "events": {}
-    }
-  },
-  {
     "id": 636,
     "name": "King of Beasts",
     "cost": 5,
@@ -20480,6 +20440,43 @@
     ],
     "minion": {
       "attack": 6,
+      "maxHp": 3,
+      "flags": [],
+      "race": 0,
+      "events": {}
+    }
+  },
+  {
+    "id": 305,
+    "name": "Kidnapper",
+    "cost": 6,
+    "pic": "149/453/562",
+    "clas": 3,
+    "type": 1,
+    "combo": {
+      "object": {
+        "events": {
+          "battlecry": [
+            {
+              "acts": [
+                {
+                  "name": "return-to-hand",
+                  "params": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "targetsType": {
+        "names": [
+          "minions"
+        ]
+      }
+    },
+    "flags": [],
+    "minion": {
+      "attack": 5,
       "maxHp": 3,
       "flags": [],
       "race": 0,
