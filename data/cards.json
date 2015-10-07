@@ -2436,7 +2436,7 @@
     "pic": "147/501/87",
     "clas": 3,
     "type": 2,
-    "conditions": [
+    "playConditions": [
       "has-weapon"
     ],
     "flags": [],
@@ -3217,7 +3217,11 @@
     "pic": "149/495/660",
     "clas": 0,
     "type": 1,
-    "comment": "Тут должен быть опциональный battlecry",
+    "comment": "Опционален ли баттлекрай?",
+    "optionalCondition": {
+      "name": "target-exists",
+      "params": []
+    },
     "targetsType": {
       "names": [
         "minions"
@@ -5883,15 +5887,31 @@
     "pic": "252/224/22352",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 3,
       "maxHp": 2,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "add-hp",
+                "params": [
+                  1
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -9790,6 +9810,10 @@
         }
       ]
     },
+    "optionalCondition": {
+      "name": "target-exists",
+      "params": []
+    },
     "isTargetsTypeOptional": true,
     "flags": [],
     "minion": {
@@ -10978,7 +11002,7 @@
     "pic": "148/136/214",
     "clas": 2,
     "type": 2,
-    "conditions": [
+    "playConditions": [
       "can-add-creature"
     ],
     "flags": [],
@@ -12050,6 +12074,11 @@
     "pic": "252/260/22341",
     "clas": 0,
     "type": 1,
+    "comment": "Опционален ли?",
+    "optionalCondition": {
+      "name": "target-exists",
+      "params": []
+    },
     "targetsType": {
       "names": [
         "minions"
@@ -13471,6 +13500,11 @@
     "pic": "252/382/22365",
     "clas": 5,
     "type": 1,
+    "comment": "опционален?",
+    "optionalCondition": {
+      "name": "target-exists",
+      "params": []
+    },
     "targetsType": {
       "names": [
         "minions",
@@ -16969,6 +17003,10 @@
     "clas": 6,
     "type": 1,
     "comment": "Является ли баттлекрай опциональным?",
+    "optionalCondition": {
+      "name": "target-exists",
+      "params": []
+    },
     "targetsType": {
       "names": [
         "minions",
@@ -17272,15 +17310,39 @@
     "pic": "198/50/14447",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "targetsType": {
+      "names": [
+        "all"
+      ]
+    },
+    "optionalCondition": {
+      "name": "hold",
+      "params": [
+        "dragon"
+      ]
+    },
+    "isTargetsTypeOptional": true,
+    "flags": [],
     "minion": {
       "attack": 5,
       "maxHp": 4,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "deal-damage",
+                "params": [
+                  3
+                ]
+              }
+            ],
+            "optional": true
+          }
+        ]
+      }
     }
   },
   {
@@ -17522,6 +17584,11 @@
     "pic": "252/238/22294",
     "clas": 0,
     "type": 1,
+    "comment": "опциональная цель?",
+    "optionalCondition": {
+      "name": "target-exists",
+      "params": []
+    },
     "targetsType": {
       "names": [
         "minions",
@@ -21040,6 +21107,10 @@
     "pic": "147/781/396",
     "clas": 0,
     "type": 1,
+    "optionalCondition": {
+      "name": "target-exists",
+      "params": []
+    },
     "targetsType": {
       "names": [
         "enemies",
