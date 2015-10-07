@@ -13267,15 +13267,26 @@
     "pic": "252/248/22275",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 3,
       "maxHp": 3,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "summon",
+                "params": [
+                  "Silver Hand Recruit"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
@@ -16548,15 +16559,32 @@
     "pic": "252/228/22290",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 1,
       "maxHp": 8,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "heal",
+                "params": [
+                  2
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "heroes",
+                "friends"
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -18348,15 +18376,31 @@
     "pic": "252/284/22355",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 4,
       "maxHp": 4,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "add-attack-hp",
+                "params": [
+                  2
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -18619,15 +18663,33 @@
     "pic": "252/226/22318",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 4,
       "maxHp": 4,
       "flags": [],
       "race": 1,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "add-attack-hp",
+                "params": [
+                  1
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "except-self",
+                "friends",
+                "minions"
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -18638,15 +18700,25 @@
     "clas": 0,
     "type": 1,
     "flags": [
-      "unique",
-      "unimplemented"
+      "unique"
     ],
     "minion": {
       "attack": 4,
       "maxHp": 5,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "add-random-spell",
+                "params": []
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
@@ -18778,15 +18850,26 @@
     "pic": "252/272/22367",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 5,
       "maxHp": 4,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "add-hand-card",
+                "params": [
+                  "Squire"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
@@ -19262,6 +19345,22 @@
           }
         ]
       }
+    }
+  },
+  {
+    "id": 883,
+    "name": "War Kodo",
+    "cost": 5,
+    "pic": "252/246/22474",
+    "clas": 0,
+    "type": 1,
+    "flags": [],
+    "minion": {
+      "attack": 3,
+      "maxHp": 5,
+      "flags": [],
+      "race": 1,
+      "events": {}
     }
   },
   {
@@ -20217,15 +20316,26 @@
     "pic": "252/244/22266",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 3,
       "maxHp": 5,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "summon",
+                "params": [
+                  "War Kodo"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
