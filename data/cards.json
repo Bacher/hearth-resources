@@ -5948,15 +5948,27 @@
     "pic": "149/490/559",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 1,
       "maxHp": 1,
       "flags": [],
       "race": 1,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "put-card-from-deck",
+                "params": [
+                  2,
+                  "pirate"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
@@ -22146,9 +22158,9 @@
     "pic": "252/410/22260",
     "clas": 0,
     "type": 1,
+    "costCalc": "minus-pirates-count",
     "flags": [
-      "unique",
-      "unimplemented"
+      "unique"
     ],
     "minion": {
       "attack": 4,
