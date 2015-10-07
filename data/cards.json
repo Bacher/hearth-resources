@@ -2082,15 +2082,32 @@
     "pic": "252/386/22453",
     "clas": 5,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 2,
       "maxHp": 1,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "if-empty-hand",
+                "params": [
+                  "deal-damage-2"
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "enemies",
+                "heroes"
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -8252,8 +8269,10 @@
         {
           "acts": [
             {
-              "name": "empty-hand-draw-card",
-              "params": []
+              "name": "if-empty-hand",
+              "params": [
+                "draw-card"
+              ]
             }
           ]
         }
@@ -12470,15 +12489,26 @@
     "pic": "252/402/22395",
     "clas": 1,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 3,
       "maxHp": 3,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "add-weapon-attack",
+                "params": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
@@ -14573,12 +14603,18 @@
           {
             "acts": [
               {
-                "name": "empty-hand-add-attack-hp",
+                "name": "if-empty-hand",
                 "params": [
+                  "add-attack-hp",
                   3
                 ]
               }
-            ]
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            }
           }
         ]
       }
@@ -14642,15 +14678,39 @@
     "pic": "252/468/22359",
     "clas": 8,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 3,
       "maxHp": 5,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "add-aura",
+                "params": []
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            },
+            "aura": {
+              "acts": [
+                {
+                  "name": "add-spell-damage",
+                  "params": [
+                    1
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -15854,15 +15914,26 @@
     "pic": "252/422/22362",
     "clas": 4,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 3,
       "maxHp": 4,
       "flags": [],
       "race": 5,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "summon-random-minion",
+                "params": [
+                  "murloc"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
@@ -16145,15 +16216,26 @@
     "pic": "252/583/22293",
     "clas": 6,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 5,
       "maxHp": 4,
       "flags": [],
       "race": 1,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "add-hero-attack",
+                "params": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
@@ -16364,15 +16446,31 @@
     "pic": "252/486/22357",
     "clas": 9,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 5,
       "maxHp": 4,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "deal-damage",
+                "params": [
+                  4
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "heroes"
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -21126,15 +21224,60 @@
     "pic": "252/520/22387",
     "clas": 7,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 5,
       "maxHp": 4,
       "flags": [],
       "race": 2,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "kill",
+                "params": []
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "minions",
+                "friends"
+              ],
+              "modificators": [
+                {
+                  "name": "random",
+                  "params": [
+                    1
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "acts": [
+              {
+                "name": "kill",
+                "params": []
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "minions",
+                "enemies"
+              ],
+              "modificators": [
+                {
+                  "name": "random",
+                  "params": [
+                    1
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -21376,14 +21519,25 @@
     "clas": 9,
     "type": 1,
     "flags": [
-      "unimplemented"
+      "unique"
     ],
     "minion": {
       "attack": 5,
       "maxHp": 4,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "summon-random-legendary-minion",
+                "params": []
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
