@@ -20261,7 +20261,6 @@
     "clas": 0,
     "type": 1,
     "flags": [
-      "unimplemented",
       "unique"
     ],
     "minion": {
@@ -20269,7 +20268,28 @@
       "maxHp": 6,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "custom": [
+          {
+            "acts": [
+              {
+                "name": "add-random-hand-minion",
+                "params": [
+                  "mech"
+                ]
+              }
+            ],
+            "event": {
+              "name": "play-card",
+              "params": [
+                "my",
+                2,
+                1
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -20279,15 +20299,26 @@
     "pic": "252/282/22326",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 5,
       "maxHp": 5,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "add-random-class-card",
+                "params": [
+                  "paladin"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
