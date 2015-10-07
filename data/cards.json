@@ -4751,15 +4751,39 @@
     "pic": "198/225/7737",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 1,
       "maxHp": 2,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "custom": [
+          {
+            "acts": [
+              {
+                "name": "add-attack",
+                "params": [
+                  1
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            },
+            "event": {
+              "name": "summon",
+              "params": [
+                "my",
+                "_",
+                "deathrattle"
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -5163,7 +5187,7 @@
     "type": 1,
     "flags": [],
     "minion": {
-      "attack": 23,
+      "attack": 2,
       "maxHp": 3,
       "flags": [],
       "race": 0,
@@ -6927,15 +6951,24 @@
     "pic": "252/430/22274",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 2,
       "maxHp": 3,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "aura": [
+          {
+            "acts": [
+              {
+                "name": "can-use-hero-skill-twice",
+                "params": []
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
@@ -7529,15 +7562,25 @@
     "pic": "148/635/7748",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "comment": "Not tested",
+    "flags": [],
     "minion": {
       "attack": 2,
       "maxHp": 2,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "deathrattle": [
+          {
+            "acts": [
+              {
+                "name": "put-random-deck-secret",
+                "params": []
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
@@ -8264,15 +8307,31 @@
     "pic": "149/103/12198",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "comment": "",
+    "targetsType": {
+      "names": [
+        "friends",
+        "minions"
+      ]
+    },
+    "flags": [],
     "minion": {
       "attack": 3,
       "maxHp": 2,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "transform-into-random-same-cost",
+                "params": []
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
