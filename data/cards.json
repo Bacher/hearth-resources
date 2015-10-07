@@ -10134,15 +10134,29 @@
     "pic": "252/266/22291",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 2,
       "maxHp": 5,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "return-to-hand",
+                "params": []
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -10316,9 +10330,7 @@
     "pic": "148/654/7753",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 2,
       "maxHp": 8,
@@ -10326,7 +10338,18 @@
         "taunt"
       ],
       "race": 0,
-      "events": {}
+      "events": {
+        "deathrattle": [
+          {
+            "acts": [
+              {
+                "name": "summon-random-enemy-deck-minion",
+                "params": []
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
@@ -10422,15 +10445,46 @@
     "pic": "252/212/22369",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 3,
       "maxHp": 3,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "inspire": [
+          {
+            "acts": [
+              {
+                "name": "add-aura",
+                "params": [
+                  "this-turn"
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            },
+            "aura": {
+              "acts": [
+                {
+                  "name": "add-flags",
+                  "params": [
+                    "windfury"
+                  ]
+                }
+              ],
+              "targetsType": {
+                "names": [
+                  "self"
+                ]
+              }
+            }
+          }
+        ]
+      }
     }
   },
   {
