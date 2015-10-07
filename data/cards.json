@@ -3472,6 +3472,12 @@
               "params": [
                 3
               ]
+            },
+            {
+              "name": "animate",
+              "params": [
+                "lightning-bolt"
+              ]
             }
           ]
         },
@@ -11530,6 +11536,12 @@
               "name": "transform",
               "params": [
                 "frog"
+              ]
+            },
+            {
+              "name": "animate",
+              "params": [
+                "hex"
               ]
             }
           ]
