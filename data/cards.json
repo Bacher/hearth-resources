@@ -2998,15 +2998,36 @@
     "pic": "252/338/22311",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "optionalCondition": {
+      "name": "reveal-minions",
+      "params": []
+    },
+    "flags": [],
     "minion": {
       "attack": 1,
       "maxHp": 2,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "add-attack-hp",
+                "params": [
+                  1
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            },
+            "optional": true
+          }
+        ]
+      }
     }
   },
   {
@@ -5298,15 +5319,44 @@
     "pic": "252/412/22333",
     "clas": 1,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "optionalCondition": {
+      "name": "hold",
+      "params": [
+        "dragon"
+      ]
+    },
+    "flags": [],
     "minion": {
       "attack": 2,
       "maxHp": 3,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "add-attack",
+                "params": [
+                  1
+                ]
+              },
+              {
+                "name": "add-flags",
+                "params": [
+                  "charge"
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            },
+            "optional": true
+          }
+        ]
+      }
     }
   },
   {
@@ -5479,15 +5529,31 @@
     "pic": "252/424/22316",
     "clas": 4,
     "type": 3,
-    "flags": [
-      "unimplemented"
-    ],
+    "optionalCondition": {
+      "name": "reveal-minions",
+      "params": []
+    },
+    "flags": [],
     "weapon": {
       "attack": 2,
       "durability": 2,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "add-weapon-durability",
+                "params": [
+                  1
+                ]
+              }
+            ],
+            "optional": true
+          }
+        ]
+      }
     }
   },
   {
@@ -8930,15 +8996,28 @@
     "pic": "148/550/4",
     "clas": 8,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 3,
       "maxHp": 2,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "aura": [
+          {
+            "acts": [
+              {
+                "name": "reduce-cost",
+                "params": [
+                  1,
+                  0,
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
@@ -14280,15 +14359,36 @@
     "pic": "252/262/22312",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "optionalCondition": {
+      "name": "reveal-minions",
+      "params": []
+    },
+    "flags": [],
     "minion": {
       "attack": 5,
       "maxHp": 3,
       "flags": [],
       "race": 1,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "add-flags",
+                "params": [
+                  "charge"
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            },
+            "optional": true
+          }
+        ]
+      }
     }
   },
   {
@@ -16046,15 +16146,27 @@
     "pic": "149/66/12191",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 4,
       "maxHp": 3,
       "flags": [],
       "race": 4,
-      "events": {}
+      "events": {
+        "deathrattle": [
+          {
+            "acts": [
+              {
+                "name": "summon-random-minion",
+                "params": [
+                  "_",
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
@@ -19377,15 +19489,37 @@
     "pic": "252/256/22315",
     "clas": 4,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "optionalCondition": {
+      "name": "reveal-minions",
+      "params": []
+    },
+    "flags": [],
     "minion": {
       "attack": 5,
       "maxHp": 5,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "heal",
+                "params": [
+                  7
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "heroes",
+                "friends"
+              ]
+            },
+            "optional": true
+          }
+        ]
+      }
     }
   },
   {
@@ -20626,15 +20760,37 @@
     "pic": "252/270/22317",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "optionalCondition": {
+      "name": "reveal-minions",
+      "params": []
+    },
+    "flags": [],
     "minion": {
       "attack": 5,
       "maxHp": 6,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "add-flags",
+                "params": [
+                  "taunt",
+                  "shield"
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            },
+            "optional": true
+          }
+        ]
+      }
     }
   },
   {
