@@ -6562,15 +6562,42 @@
     "pic": "148/632/7754",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 1,
       "maxHp": 2,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "add-custom-event",
+                "params": [
+                  "once"
+                ]
+              }
+            ],
+            "customEvent": {
+              "acts": [
+                {
+                  "name": "summon",
+                  "params": [
+                    "Echoing Ooze"
+                  ]
+                }
+              ],
+              "event": {
+                "name": "end-turn",
+                "params": [
+                  "my"
+                ]
+              }
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -9544,15 +9571,37 @@
     "pic": "252/529/22304",
     "clas": 7,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "comment": "Если уничтожить миниона, нанесется ли урон? Что будет если ударить сильнее? BUG не срабатывает при убийственном ударе",
+    "flags": [],
     "minion": {
       "attack": 4,
-      "maxHp": 4,
+      "maxHp": 3,
       "flags": [],
       "race": 2,
-      "events": {}
+      "events": {
+        "custom": [
+          {
+            "acts": [
+              {
+                "name": "deal-damage-from-event",
+                "params": []
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "heroes",
+                "friends"
+              ]
+            },
+            "event": {
+              "name": "damage-taken",
+              "params": [
+                "self"
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -21786,8 +21835,7 @@
     "clas": 0,
     "type": 1,
     "flags": [
-      "unique",
-      "unimplemented"
+      "unique"
     ],
     "minion": {
       "attack": 6,
@@ -21796,7 +21844,26 @@
         "taunt"
       ],
       "race": 3,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "if-hold-dragon",
+                "params": [
+                  "deal-damage",
+                  3
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "minions"
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -22304,16 +22371,45 @@
     "pic": "198/35/14438",
     "clas": 0,
     "type": 1,
+    "optionalCondition": {
+      "name": "hold",
+      "params": [
+        "dragon"
+      ]
+    },
+    "targetsType": {
+      "names": [
+        "minions"
+      ],
+      "modificators": [
+        {
+          "name": "legendary",
+          "params": []
+        }
+      ]
+    },
+    "isTargetsTypeOptional": true,
     "flags": [
-      "unique",
-      "unimplemented"
+      "unique"
     ],
     "minion": {
       "attack": 8,
       "maxHp": 4,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "kill",
+                "params": []
+              }
+            ],
+            "optional": true
+          }
+        ]
+      }
     }
   },
   {
@@ -23024,15 +23120,30 @@
     "clas": 6,
     "type": 1,
     "flags": [
-      "unique",
-      "unimplemented"
+      "unique"
     ],
     "minion": {
       "attack": 5,
       "maxHp": 5,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "aura": [
+          {
+            "acts": [
+              {
+                "name": "reduce-cost",
+                "params": [
+                  1,
+                  0,
+                  1,
+                  "set"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
