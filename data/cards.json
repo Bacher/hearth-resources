@@ -9083,15 +9083,24 @@
     "pic": "149/36/12242",
     "clas": 5,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 2,
       "maxHp": 3,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "aura": [
+          {
+            "acts": [
+              {
+                "name": "steamwheedle-sniper",
+                "params": []
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
