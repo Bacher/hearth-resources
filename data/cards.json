@@ -387,6 +387,34 @@
     }
   },
   {
+    "id": 490,
+    "name": "Dream",
+    "cost": 0,
+    "pic": "http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/2/29/Dream%28561%29.png",
+    "clas": 0,
+    "type": 2,
+    "targetsType": {
+      "names": [
+        "minions"
+      ]
+    },
+    "flags": [
+      "uncollectable"
+    ],
+    "spell": {
+      "acts": [
+        {
+          "acts": [
+            {
+              "name": "return-to-hand",
+              "params": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "id": 734,
     "name": "Fire Hawk Form",
     "cost": 0,
@@ -799,6 +827,62 @@
       "flags": [],
       "events": {},
       "race": 5
+    }
+  },
+  {
+    "id": 491,
+    "name": "Nightmare",
+    "cost": 0,
+    "pic": "http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/d/d3/Nightmare%28334%29.png",
+    "clas": 0,
+    "type": 2,
+    "comment": "Если бафать противника, то минион умер в начале его хода.",
+    "targetsType": {
+      "names": [
+        "minions"
+      ]
+    },
+    "flags": [
+      "uncollectable"
+    ],
+    "spell": {
+      "acts": [
+        {
+          "acts": [
+            {
+              "name": "add-attack-hp",
+              "params": [
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "acts": [
+            {
+              "name": "add-custom-event",
+              "params": []
+            }
+          ],
+          "customEvent": {
+            "acts": [
+              {
+                "name": "kill",
+                "params": []
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            },
+            "event": {
+              "name": "start-turn",
+              "params": []
+            }
+          }
+        }
+      ]
     }
   },
   {
@@ -9689,6 +9773,44 @@
     }
   },
   {
+    "id": 492,
+    "name": "Ysera Awakens",
+    "cost": 2,
+    "pic": "http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/a/a2/Ysera_Awakens%28235%29.png",
+    "clas": 0,
+    "type": 2,
+    "flags": [
+      "uncollectable"
+    ],
+    "spell": {
+      "acts": [
+        {
+          "acts": [
+            {
+              "name": "deal-damage",
+              "params": [
+                5
+              ]
+            }
+          ],
+          "targetsType": {
+            "names": [
+              "all"
+            ],
+            "modificators": [
+              {
+                "name": "except",
+                "params": [
+                  "Ysera"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
     "id": 238,
     "name": "Acolyte of Pain",
     "cost": 3,
@@ -12168,6 +12290,26 @@
       "attack": 4,
       "maxHp": 3,
       "flags": [],
+      "race": 0,
+      "events": {}
+    }
+  },
+  {
+    "id": 493,
+    "name": "Laughing Sister",
+    "cost": 3,
+    "pic": "http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/e/ed/Laughing_Sister%28116%29.png",
+    "clas": 0,
+    "type": 1,
+    "flags": [
+      "uncollectable"
+    ],
+    "minion": {
+      "attack": 3,
+      "maxHp": 5,
+      "flags": [
+        "spell-stealth"
+      ],
       "race": 0,
       "events": {}
     }
@@ -15243,6 +15385,24 @@
           }
         }
       ]
+    }
+  },
+  {
+    "id": 494,
+    "name": "Emerald Drake",
+    "cost": 4,
+    "pic": "http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/6/64/Emerald_Drake%28534%29.png",
+    "clas": 0,
+    "type": 1,
+    "flags": [
+      "uncollectable"
+    ],
+    "minion": {
+      "attack": 7,
+      "maxHp": 6,
+      "flags": [],
+      "race": 3,
+      "events": {}
     }
   },
   {
@@ -23531,14 +23691,25 @@
     "clas": 0,
     "type": 1,
     "flags": [
-      "unimplemented"
+      "unique"
     ],
     "minion": {
       "attack": 4,
       "maxHp": 12,
       "flags": [],
       "race": 3,
-      "events": {}
+      "events": {
+        "end-turn": [
+          {
+            "acts": [
+              {
+                "name": "add-dream-card",
+                "params": []
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
