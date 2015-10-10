@@ -22762,14 +22762,25 @@
     "clas": 0,
     "type": 1,
     "flags": [
-      "unimplemented"
+      "unique"
     ],
     "minion": {
       "attack": 6,
       "maxHp": 8,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "end-turn": [
+          {
+            "acts": [
+              {
+                "name": "summon-died",
+                "params": []
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
