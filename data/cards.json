@@ -58,7 +58,8 @@
       ]
     },
     "flags": [
-      "uncollectable"
+      "uncollectable",
+      "unhand"
     ],
     "spell": {
       "acts": [
@@ -83,7 +84,8 @@
     "clas": 6,
     "type": 2,
     "flags": [
-      "uncollectable"
+      "uncollectable",
+      "unhand"
     ],
     "spell": {
       "acts": [
@@ -108,7 +110,8 @@
     "clas": 6,
     "type": 2,
     "flags": [
-      "uncollectable"
+      "uncollectable",
+      "unhand"
     ],
     "spell": {
       "acts": [
@@ -266,7 +269,8 @@
     "clas": 6,
     "type": 2,
     "flags": [
-      "uncollectable"
+      "uncollectable",
+      "unhand"
     ],
     "spell": {
       "acts": [
@@ -297,7 +301,8 @@
       ]
     },
     "flags": [
-      "uncollectable"
+      "uncollectable",
+      "unhand"
     ],
     "spell": {
       "acts": [
@@ -673,6 +678,95 @@
     }
   },
   {
+    "id": 886,
+    "name": "Lion Form",
+    "cost": 0,
+    "pic": "http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/a/a4/Lion_Form%2822443%29.png",
+    "clas": 6,
+    "type": 2,
+    "flags": [
+      "uncollectable",
+      "unhand"
+    ],
+    "spell": {
+      "acts": [
+        {
+          "acts": [
+            {
+              "name": "transform",
+              "params": [
+                "Sabertooth Lion"
+              ]
+            }
+          ],
+          "targetsType": {
+            "names": [
+              "self"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 884,
+    "name": "Living Roots_1",
+    "cost": 0,
+    "pic": "http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/8/86/Living_Roots%2822437%29.png",
+    "clas": 6,
+    "type": 2,
+    "targetsType": {
+      "names": [
+        "all"
+      ]
+    },
+    "flags": [
+      "uncollectable",
+      "unhand"
+    ],
+    "spell": {
+      "acts": [
+        {
+          "acts": [
+            {
+              "name": "deal-damage",
+              "params": [
+                2
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 885,
+    "name": "Living Roots_2",
+    "cost": 0,
+    "pic": "http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/4/47/Living_Roots%2822438%29.png",
+    "clas": 6,
+    "type": 2,
+    "flags": [
+      "uncollectable",
+      "unhand"
+    ],
+    "spell": {
+      "acts": [
+        {
+          "acts": [
+            {
+              "name": "summon",
+              "params": [
+                "Sapling",
+                2
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "id": 360,
     "name": "Mark of Nature",
     "cost": 0,
@@ -794,7 +888,8 @@
     "clas": 6,
     "type": 2,
     "flags": [
-      "uncollectable"
+      "uncollectable",
+      "unhand"
     ],
     "spell": {
       "acts": [
@@ -933,6 +1028,37 @@
               "params": []
             }
           ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 887,
+    "name": "Panther Form",
+    "cost": 0,
+    "pic": "http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/a/a0/Panther_Form%2822444%29.png",
+    "clas": 6,
+    "type": 2,
+    "flags": [
+      "uncollectable",
+      "unhand"
+    ],
+    "spell": {
+      "acts": [
+        {
+          "acts": [
+            {
+              "name": "transform",
+              "params": [
+                "Sabertooth Panther"
+              ]
+            }
+          ],
+          "targetsType": {
+            "names": [
+              "self"
+            ]
+          }
         }
       ]
     }
@@ -1194,7 +1320,8 @@
       ]
     },
     "flags": [
-      "uncollectable"
+      "uncollectable",
+      "unhand"
     ],
     "spell": {
       "acts": [
@@ -1219,7 +1346,8 @@
     "clas": 6,
     "type": 2,
     "flags": [
-      "uncollectable"
+      "uncollectable",
+      "unhand"
     ],
     "spell": {
       "acts": [
@@ -1275,7 +1403,8 @@
     "clas": 6,
     "type": 2,
     "flags": [
-      "uncollectable"
+      "uncollectable",
+      "unhand"
     ],
     "spell": {
       "acts": [
@@ -3646,12 +3775,10 @@
     "clas": 6,
     "type": 2,
     "additionActions": [
-      "1",
-      "2"
+      "Living Roots_1",
+      "Living Roots_2"
     ],
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "spell": {
       "acts": []
     }
@@ -6628,9 +6755,11 @@
     "pic": "252/342/22307",
     "clas": 6,
     "type": 1,
-    "flags": [
-      "unimplemented"
+    "additionActions": [
+      "Lion Form",
+      "Panther Form"
     ],
+    "flags": [],
     "minion": {
       "attack": 2,
       "maxHp": 1,
@@ -8634,6 +8763,46 @@
       "attack": 2,
       "maxHp": 3,
       "flags": [],
+      "race": 1,
+      "events": {}
+    }
+  },
+  {
+    "id": 889,
+    "name": "Sabertooth Lion",
+    "cost": 2,
+    "pic": "http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/3/3b/Sabertooth_Lion%2822445%29.png",
+    "clas": 6,
+    "type": 1,
+    "flags": [
+      "uncollectable"
+    ],
+    "minion": {
+      "attack": 2,
+      "maxHp": 1,
+      "flags": [
+        "charge"
+      ],
+      "race": 1,
+      "events": {}
+    }
+  },
+  {
+    "id": 888,
+    "name": "Sabertooth Panther",
+    "cost": 2,
+    "pic": "http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/9/9c/Sabertooth_Panther%2822446%29.png",
+    "clas": 6,
+    "type": 1,
+    "flags": [
+      "uncollectable"
+    ],
+    "minion": {
+      "attack": 3,
+      "maxHp": 2,
+      "flags": [
+        "stealth"
+      ],
       "race": 1,
       "events": {}
     }
@@ -12671,11 +12840,33 @@
     "pic": "252/354/22383",
     "clas": 6,
     "type": 2,
-    "flags": [
-      "unimplemented"
-    ],
+    "targetsType": {
+      "names": [
+        "minions"
+      ]
+    },
+    "flags": [],
     "spell": {
-      "acts": []
+      "acts": [
+        {
+          "acts": [
+            {
+              "name": "kill",
+              "params": []
+            }
+          ]
+        },
+        {
+          "acts": [
+            {
+              "name": "add-random-hand-minion",
+              "params": [
+                "op"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -20380,9 +20571,7 @@
       "Dark Wispers_1",
       "Dark Wispers_2"
     ],
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "spell": {
       "acts": []
     }
