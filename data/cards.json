@@ -10395,6 +10395,26 @@
     }
   },
   {
+    "id": 891,
+    "name": "Boar_",
+    "cost": 3,
+    "pic": "252/465/22420",
+    "clas": 0,
+    "type": 1,
+    "flags": [
+      "uncollectable"
+    ],
+    "minion": {
+      "attack": 4,
+      "maxHp": 2,
+      "flags": [
+        "charge"
+      ],
+      "race": 1,
+      "events": {}
+    }
+  },
+  {
     "id": 632,
     "name": "Bouncing Blade",
     "cost": 3,
@@ -11301,12 +11321,25 @@
     "pic": "252/453/22267",
     "clas": 8,
     "type": 4,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "trap": {
       "events": {
-        "custom": []
+        "custom": [
+          {
+            "event": {
+              "name": "death",
+              "params": [
+                "my"
+              ]
+            },
+            "acts": [
+              {
+                "name": "summon-random-minion-cost-from-event",
+                "params": []
+              }
+            ]
+          }
+        ]
       }
     }
   },
@@ -13165,11 +13198,25 @@
     "pic": "252/462/22396",
     "clas": 8,
     "type": 2,
-    "flags": [
-      "unimplemented"
-    ],
+    "targetsType": {
+      "names": [
+        "minions"
+      ]
+    },
+    "flags": [],
     "spell": {
-      "acts": []
+      "acts": [
+        {
+          "acts": [
+            {
+              "name": "transform",
+              "params": [
+                "Boar_"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -14033,15 +14080,34 @@
     "pic": "252/471/22299",
     "clas": 8,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 3,
       "maxHp": 4,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "add-random-spell",
+                "params": []
+              }
+            ]
+          },
+          {
+            "acts": [
+              {
+                "name": "add-random-spell",
+                "params": [
+                  "op"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
@@ -14557,15 +14623,40 @@
     "pic": "252/420/22330",
     "clas": 4,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 2,
       "maxHp": 4,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "aura": [
+          {
+            "acts": [
+              {
+                "name": "add-attack",
+                "params": [
+                  1
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "minions",
+                "friends"
+              ],
+              "modificators": [
+                {
+                  "name": "name",
+                  "params": [
+                    "Silver Hand Recruit"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -15694,15 +15785,32 @@
     "pic": "148/154/125",
     "clas": 8,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 3,
       "maxHp": 3,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "end-turn": [
+          {
+            "acts": [
+              {
+                "name": "if-have-secret",
+                "params": [
+                  "add-attack-hp",
+                  2
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -19557,15 +19665,40 @@
     "pic": "148/951/12280",
     "clas": 4,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 2,
       "maxHp": 5,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "add-attack-hp",
+                "params": [
+                  2
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "friends",
+                "minions"
+              ],
+              "modificators": [
+                {
+                  "name": "name",
+                  "params": [
+                    "Silver Hand Recruit"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
@@ -20590,15 +20723,24 @@
     "pic": "252/474/22261",
     "clas": 8,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 6,
       "maxHp": 6,
       "flags": [],
       "race": 3,
-      "events": {}
+      "events": {
+        "aura": [
+          {
+            "acts": [
+              {
+                "name": "infinity-hero-skill",
+                "params": []
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
