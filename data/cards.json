@@ -17997,17 +17997,26 @@
         "all"
       ]
     },
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "spell": {
       "acts": [
         {
           "acts": [
             {
-              "name": "deal-damage",
+              "name": "deal-spell-damage",
               "params": [
                 2
+              ]
+            }
+          ]
+        },
+        {
+          "acts": [
+            {
+              "name": "if-dead",
+              "params": [
+                "summon-random-minion",
+                "demon"
               ]
             }
           ]
@@ -24073,9 +24082,8 @@
     "pic": "197/957/14458",
     "clas": 6,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "costCalc": "minus-deaths-count",
+    "flags": [],
     "minion": {
       "attack": 7,
       "maxHp": 8,
