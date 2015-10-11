@@ -16064,20 +16064,6 @@
     }
   },
   {
-    "id": 5,
-    "type": 1,
-    "name": "Guardian of Icecrown",
-    "pic": "149/284/7813",
-    "cost": 4,
-    "clas": 0,
-    "minion": {
-      "attack": 4,
-      "maxHp": 4,
-      "flags": null,
-      "events": {}
-    }
-  },
-  {
     "id": 197,
     "name": "Hammer of Wrath",
     "cost": 4,
