@@ -1,5 +1,19 @@
 [
   {
+    "id": 890,
+    "name": "Ambush!",
+    "cost": 0,
+    "pic": "http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/0/0f/Ambush%21%2822435%29.png",
+    "clas": 3,
+    "type": 2,
+    "flags": [
+      "uncollectable"
+    ],
+    "spell": {
+      "acts": []
+    }
+  },
+  {
     "id": 109,
     "name": "Ancestral Healing",
     "cost": 0,
@@ -1715,15 +1729,13 @@
         "minions"
       ]
     },
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "spell": {
       "acts": [
         {
           "acts": [
             {
-              "name": "deal-damage",
+              "name": "deal-double-spell-damage",
               "params": [
                 2
               ]
@@ -6986,15 +6998,26 @@
     "pic": "252/456/22268",
     "clas": 8,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 3,
       "maxHp": 2,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "aura": [
+          {
+            "acts": [
+              {
+                "name": "increase-hero-skill-damage",
+                "params": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
@@ -7298,11 +7321,25 @@
     "pic": "197/951/14462",
     "clas": 3,
     "type": 2,
-    "flags": [
-      "unimplemented"
-    ],
+    "targetsType": {
+      "names": [
+        "minions"
+      ]
+    },
+    "flags": [],
     "spell": {
-      "acts": []
+      "acts": [
+        {
+          "acts": [
+            {
+              "name": "shuffle-target-into-deck",
+              "params": [
+                3
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -10228,11 +10265,22 @@
     "pic": "252/556/22397",
     "clas": 3,
     "type": 2,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "spell": {
-      "acts": []
+      "acts": [
+        {
+          "acts": [
+            {
+              "name": "shuffle-card-into-deck",
+              "params": [
+                "op",
+                "Ambush!",
+                3
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -12804,12 +12852,31 @@
     "pic": "148/181/569",
     "clas": 8,
     "type": 4,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "trap": {
       "events": {
-        "custom": []
+        "custom": [
+          {
+            "event": {
+              "name": "card-played",
+              "params": [
+                "op",
+                1
+              ]
+            },
+            "acts": [
+              {
+                "name": "summon-copy",
+                "params": []
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "target"
+              ]
+            }
+          }
+        ]
       }
     }
   },
@@ -13710,13 +13777,19 @@
           {
             "acts": [
               {
-                "name": "if-race-gain-attack-hp",
+                "name": "if-have-race",
                 "params": [
                   "pirate",
+                  "add-attack-hp",
                   1
                 ]
               }
-            ]
+            ],
+            "targetsType": {
+              "names": [
+                "self"
+              ]
+            }
           }
         ]
       }
@@ -19502,15 +19575,28 @@
     "pic": "252/480/22344",
     "clas": 5,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 3,
       "maxHp": 5,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "if-have-race",
+                "params": [
+                  "beast",
+                  "summon-random-minion",
+                  "beast"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
