@@ -10361,6 +10361,24 @@
     }
   },
   {
+    "id": 496,
+    "name": "Blood Fury",
+    "cost": 3,
+    "pic": "148/244/669",
+    "clas": 7,
+    "type": 3,
+    "flags": [
+      "uncollectable"
+    ],
+    "weapon": {
+      "attack": 3,
+      "durability": 8,
+      "flags": [],
+      "race": 0,
+      "events": {}
+    }
+  },
+  {
     "id": 388,
     "name": "Blood Knight",
     "cost": 3,
@@ -21216,6 +21234,24 @@
     }
   },
   {
+    "id": 495,
+    "name": "Infernal",
+    "cost": 6,
+    "pic": "148/617/121",
+    "clas": 7,
+    "type": 1,
+    "flags": [
+      "uncollectable"
+    ],
+    "minion": {
+      "attack": 6,
+      "maxHp": 6,
+      "flags": [],
+      "race": 2,
+      "events": {}
+    }
+  },
+  {
     "id": 627,
     "name": "Iron Juggernaut",
     "cost": 6,
@@ -23798,12 +23834,27 @@
     "cost": 9,
     "pic": "148/238/482",
     "clas": 7,
-    "type": 2,
+    "type": 1,
     "flags": [
-      "unimplemented"
+      "unique"
     ],
-    "spell": {
-      "acts": []
+    "minion": {
+      "attack": 3,
+      "maxHp": 15,
+      "flags": [],
+      "race": 0,
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "replace-hero",
+                "params": []
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
