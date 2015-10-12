@@ -5652,11 +5652,20 @@
         "minions"
       ]
     },
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "spell": {
-      "acts": []
+      "acts": [
+        {
+          "acts": [
+            {
+              "name": "add-deathrattle",
+              "params": [
+                "summon-copy"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -7027,11 +7036,24 @@
     "pic": "148/819/12238",
     "clas": 5,
     "type": 2,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "spell": {
-      "acts": []
+      "acts": [
+        {
+          "acts": [
+            {
+              "name": "trigger-deathrattle",
+              "params": []
+            }
+          ],
+          "targetsType": {
+            "names": [
+              "minions",
+              "friends"
+            ]
+          }
+        }
+      ]
     }
   },
   {
@@ -12533,15 +12555,46 @@
     "pic": "252/400/22286",
     "clas": 1,
     "type": 3,
-    "flags": [
-      "unimplemented"
-    ],
+    "optionalCondition": {
+      "name": "target-exists",
+      "params": []
+    },
+    "targetsType": {
+      "names": [
+        "minions",
+        "friends"
+      ],
+      "modificators": [
+        {
+          "name": "with",
+          "params": [
+            "taunt"
+          ]
+        }
+      ]
+    },
+    "isTargetsTypeOptional": true,
+    "flags": [],
     "weapon": {
       "attack": 3,
       "durability": 2,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "add-weapon-durability",
+                "params": [
+                  1
+                ]
+              }
+            ],
+            "optional": true
+          }
+        ]
+      }
     }
   },
   {
