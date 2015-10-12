@@ -4114,6 +4114,24 @@
     }
   },
   {
+    "id": 892,
+    "name": "Poisoned Dagger",
+    "cost": 1,
+    "pic": "http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/1/1f/Poisoned_Dagger%2822488%29.png",
+    "clas": 0,
+    "type": 3,
+    "flags": [
+      "uncollectable"
+    ],
+    "weapon": {
+      "attack": 2,
+      "durability": 2,
+      "flags": [],
+      "race": 0,
+      "events": {}
+    }
+  },
+  {
     "id": 298,
     "name": "Power Overwhelming",
     "cost": 1,
@@ -19977,7 +19995,20 @@
       "maxHp": 6,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "aura": [
+          {
+            "acts": [
+              {
+                "name": "add-weapon-attack",
+                "params": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
@@ -21331,15 +21362,25 @@
     "clas": 0,
     "type": 1,
     "flags": [
-      "unique",
-      "unimplemented"
+      "unique"
     ],
     "minion": {
       "attack": 6,
       "maxHp": 3,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "battlecry": [
+          {
+            "acts": [
+              {
+                "name": "improve-hero-power",
+                "params": []
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
