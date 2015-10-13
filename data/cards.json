@@ -6940,7 +6940,7 @@
         "custom": [
           {
             "event": {
-              "name": "hit-to",
+              "name": "try-hit-to",
               "params": [
                 "my-hero"
               ]
@@ -7247,9 +7247,9 @@
         "custom": [
           {
             "event": {
-              "name": "hit-to",
+              "name": "try-hit-to",
               "params": [
-                "my-hero"
+                "my"
               ]
             },
             "acts": [
@@ -9233,7 +9233,7 @@
     "pic": "148/424/210",
     "clas": 5,
     "type": 4,
-    "comment": "Работает только на hit?",
+    "comment": "Работает только на hit? Должно ли сработать одновременно с freeze-trap на пример?",
     "flags": [],
     "trap": {
       "events": {
@@ -14568,16 +14568,12 @@
         "custom": [
           {
             "event": {
-              "name": "hit-to",
+              "name": "try-hit-to",
               "params": [
                 "my-hero"
               ]
             },
             "acts": [
-              {
-                "name": "prevent",
-                "params": []
-              },
               {
                 "name": "kill",
                 "params": []
