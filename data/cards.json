@@ -3317,7 +3317,7 @@
   },
   {
     "id": 200,
-    "name": "Hand of Protector",
+    "name": "Hand of Protection",
     "cost": 1,
     "pic": "148/295/499",
     "clas": 4,
@@ -8913,7 +8913,7 @@
   },
   {
     "id": 470,
-    "name": "Scavening Hyena",
+    "name": "Scavenging Hyena",
     "cost": 2,
     "pic": "148/388/279",
     "clas": 5,
@@ -12435,7 +12435,7 @@
   },
   {
     "id": 28,
-    "name": "Ironforge Riffleman",
+    "name": "Ironforge Rifleman",
     "cost": 3,
     "pic": "147/601/41",
     "clas": 0,
@@ -17994,7 +17994,7 @@
   },
   {
     "id": 302,
-    "name": "Assasin's Blade",
+    "name": "Assassin's Blade",
     "cost": 5,
     "pic": "147/513/433",
     "clas": 3,
@@ -20362,7 +20362,9 @@
     "pic": "252/246/22474",
     "clas": 0,
     "type": 1,
-    "flags": [],
+    "flags": [
+      "uncollectable"
+    ],
     "minion": {
       "attack": 3,
       "maxHp": 5,
