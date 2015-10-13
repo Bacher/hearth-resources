@@ -2681,43 +2681,6 @@
     }
   },
   {
-    "id": 501,
-    "name": "Deathcharger",
-    "cost": 1,
-    "pic": "148/641/7762",
-    "clas": 0,
-    "type": 1,
-    "flags": [],
-    "minion": {
-      "attack": 2,
-      "maxHp": 3,
-      "flags": [
-        "charge"
-      ],
-      "race": 0,
-      "events": {
-        "deathrattle": [
-          {
-            "acts": [
-              {
-                "name": "deal-damage",
-                "params": [
-                  3
-                ]
-              }
-            ],
-            "targetsType": {
-              "names": [
-                "heroes",
-                "friends"
-              ]
-            }
-          }
-        ]
-      }
-    }
-  },
-  {
     "id": 147,
     "name": "Defender",
     "cost": 1,
@@ -19940,6 +19903,37 @@
                 "params": [
                   "Squire",
                   2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 501,
+    "name": "Sludge Belcher",
+    "cost": 5,
+    "pic": "148/663/7749",
+    "clas": 0,
+    "type": 1,
+    "flags": [],
+    "minion": {
+      "attack": 3,
+      "maxHp": 5,
+      "flags": [
+        "taunt"
+      ],
+      "race": 0,
+      "events": {
+        "deathrattle": [
+          {
+            "acts": [
+              {
+                "name": "summon",
+                "params": [
+                  "Slime"
                 ]
               }
             ]
