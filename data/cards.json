@@ -13128,13 +13128,13 @@
     "pic": "148/966/12281",
     "clas": 0,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 4,
       "maxHp": 4,
-      "flags": [],
+      "flags": [
+        "ogre-attack"
+      ],
       "race": 0,
       "events": {}
     }
@@ -13146,13 +13146,13 @@
     "pic": "148/930/12211",
     "clas": 1,
     "type": 3,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "weapon": {
       "attack": 4,
       "durability": 2,
-      "flags": [],
+      "flags": [
+        "ogre-attack"
+      ],
       "race": 0,
       "events": {}
     }
@@ -19672,14 +19672,13 @@
     "pic": "149/39/12235",
     "clas": 3,
     "type": 1,
-    "flags": [
-      "unimplemented"
-    ],
+    "flags": [],
     "minion": {
       "attack": 6,
       "maxHp": 6,
       "flags": [
-        "stealth"
+        "stealth",
+        "ogre-attack"
       ],
       "race": 0,
       "events": {}
@@ -21586,15 +21585,32 @@
     "clas": 0,
     "type": 1,
     "flags": [
-      "unique",
-      "unimplemented"
+      "unique"
     ],
     "minion": {
       "attack": 7,
       "maxHp": 6,
       "flags": [],
       "race": 0,
-      "events": {}
+      "events": {
+        "aura": [
+          {
+            "acts": [
+              {
+                "name": "add-flags",
+                "params": [
+                  "ogre-attack"
+                ]
+              }
+            ],
+            "targetsType": {
+              "names": [
+                "minions"
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   {
